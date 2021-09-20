@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
-            android:text="Enter your login pin"
+            android:text="Geben Sie Ihren Login-Pin ein"
             android:textColor="#000" />
 
         <com.chaos.view.PinView
@@ -49,7 +49,7 @@
             android:layout_marginTop="50dp"
             android:background="@drawable/btn_bg"
             android:inputType="text"
-            android:text="Login"
+            android:text="Anmeldung"
 
             android:textColor="#fff" />
     </LinearLayout>

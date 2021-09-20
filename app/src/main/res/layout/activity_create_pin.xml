@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
-            android:text="Create your login pin"
+            android:text="Erstelle deinen Pin"
             android:textColor="#000" />
 
         <com.chaos.view.PinView
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
-            android:text="Renter your login pin"
+            android:text="Mieten Sie Ihren Login-Pin"
             android:textColor="#000" />
 
         <com.chaos.view.PinView
@@ -71,7 +71,7 @@
             android:layout_marginTop="50dp"
             android:background="@drawable/btn_bg"
             android:inputType="text"
-            android:text="Create Pin"
+            android:text="Pin erstellen"
 
             android:textColor="#fff" />
     </LinearLayout>

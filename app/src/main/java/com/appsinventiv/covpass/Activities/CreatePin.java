@@ -36,11 +36,11 @@ public class CreatePin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (loginPin.getText().length() < 4) {
-                    CommonUtils.showToast("Please enter correct pin");
+                    CommonUtils.showToast("Bitte korrekten Pin eingeben");
                 } else if (confirmLoginPin.getText().length() < 4) {
-                    CommonUtils.showToast("Please enter correct pin");
+                    CommonUtils.showToast("Bitte korrekten Pin eingeben");
                 } else if (!confirmLoginPin.getText().toString().equals(loginPin.getText().toString())) {
-                    CommonUtils.showToast("Pins does not match");
+                    CommonUtils.showToast("Pins stimmen nicht überein");
                 } else {
                     savePin();
                 }

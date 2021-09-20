@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CREATE YOUR \nPROFILE"
+            android:text="ERSTELLEN SIE\nIHR PROFIL"
             android:textColor="@color/colorBlue"
             android:textSize="40sp"
             android:textStyle="bold" />
@@ -44,7 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/firstname"
-                    android:hint="First name"
+                    android:hint="Vorname"
                     android:nextFocusDown="@id/lastname"
                     android:inputType="textCapWords" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -61,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:nextFocusDown="@id/dobday"
                     android:id="@+id/lastname"
-                    android:hint="Last name"
+                    android:hint="Nachname"
                     android:inputType="textCapWords" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Date of Birth"
+            android:text="Geburtsdatum"
             android:textColor="@color/colorBlue"
             android:textSize="18sp" />
 
@@ -90,7 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/dobday"
-                    android:hint="Day"
+                    android:hint="Tag"
                     android:inputType="number"
                     android:maxLength="2" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -105,7 +105,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Month"
+                    android:hint="Monat"
                     android:id="@+id/dobmonth"
                     android:inputType="number"
                     android:maxLength="2" />
@@ -123,7 +123,7 @@
 
                     android:layout_height="wrap_content"
                     android:id="@+id/dobyear"
-                    android:hint="Year"
+                    android:hint="Jahr"
                     android:inputType="number"
                     android:maxLength="4" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -134,7 +134,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="First Injection Date"
+            android:text="Datum der ersten Injektion"
 
             android:textColor="@color/colorBlue"
             android:textSize="18sp" />
@@ -153,7 +153,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Day"
+                    android:hint="Tag"
                     android:nextFocusDown="@id/firstinjmonth"
 
                     android:id="@+id/firstinjday"
@@ -175,7 +175,7 @@
                     android:id="@+id/firstinjmonth"
                     android:nextFocusDown="@id/firstinjyear"
 
-                    android:hint="Month"
+                    android:hint="Monat"
                     android:inputType="number"
                     android:maxLength="2" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -190,7 +190,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Year"
+                    android:hint="Jahr"
                     android:id="@+id/firstinjyear"
                     android:nextFocusDown="@id/secondinjday"
 
@@ -204,7 +204,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Second Injection Date"
+            android:text="Zweites Injektionsdatum"
 
             android:textColor="@color/colorBlue"
             android:textSize="18sp" />
@@ -223,7 +223,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Day"
+                    android:hint="Tag"
                     android:id="@+id/secondinjday"
                     android:nextFocusDown="@id/secondinjmonth"
 
@@ -245,7 +245,7 @@
                     android:nextFocusDown="@id/secondinjyear"
 
                     android:layout_height="wrap_content"
-                    android:hint="Month"
+                    android:hint="Monat"
                     android:inputType="number"
                     android:maxLength="2" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -262,7 +262,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/secondinjyear"
 
-                    android:hint="Year"
+                    android:hint="Jahr"
                     android:inputType="number"
                     android:maxLength="4" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -276,7 +276,7 @@
             android:layout_margin="30dp"
             android:background="@drawable/btn_bg"
             android:inputType="textCapSentences"
-            android:text="Save Profile"
+            android:text="Profil sichern"
             android:textColor="#fff" />
     </LinearLayout>
 

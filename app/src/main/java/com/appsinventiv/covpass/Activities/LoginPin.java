@@ -31,7 +31,7 @@ public class LoginPin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (loginPin.getText().length() < 4) {
-                    CommonUtils.showToast("Please enter correct pin");
+                    CommonUtils.showToast("Bitte korrekten Pin eingeben");
 
                 } else {
                     if (SharedPrefs.getPin().equalsIgnoreCase(loginPin.getText().toString())) {
@@ -41,7 +41,7 @@ public class LoginPin extends AppCompatActivity {
                         startActivity(i);
                         finish();
                     } else {
-                        CommonUtils.showToast("Wrong pin entered");
+                        CommonUtils.showToast("Falsche PIN eingegeben");
                     }
                 }
             }

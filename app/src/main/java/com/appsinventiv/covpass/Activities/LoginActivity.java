@@ -50,27 +50,27 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (firstname.getText().length() < 1) {
-                    firstname.setError("Enter firstname");
+                    firstname.setError("Kann nicht leer sein");
                 } else if (lastname.getText().length() < 1) {
-                    lastname.setError("Enter lastname");
+                    lastname.setError("Kann nicht leer sein");
                 } else if (dobday.getText().length() < 1) {
-                    dobday.setError("Enter day");
+                    dobday.setError("Kann nicht leer sein");
                 } else if (dobmonth.getText().length() < 1) {
-                    dobmonth.setError("Enter month");
+                    dobmonth.setError("Kann nicht leer sein");
                 } else if (dobyear.getText().length() < 1) {
-                    dobyear.setError("Enter year");
+                    dobyear.setError("Kann nicht leer sein");
                 } else if (firstinjday.getText().length() < 1) {
-                    firstinjday.setError("Enter day");
+                    firstinjday.setError("Kann nicht leer sein");
                 } else if (firstinjmonth.getText().length() < 1) {
-                    firstinjmonth.setError("Enter month");
+                    firstinjmonth.setError("Kann nicht leer sein");
                 } else if (firstinjyear.getText().length() < 1) {
-                    firstinjyear.setError("Enter year");
+                    firstinjyear.setError("Kann nicht leer sein");
                 } else if (secondinjday.getText().length() < 1) {
-                    secondinjday.setError("Enter day");
+                    secondinjday.setError("Kann nicht leer sein");
                 } else if (secondinjmonth.getText().length() < 1) {
-                    secondinjmonth.setError("Enter month");
+                    secondinjmonth.setError("Kann nicht leer sein");
                 } else if (secondinjyear.getText().length() < 1) {
-                    secondinjyear.setError("Enter year");
+                    secondinjyear.setError("Kann nicht leer sein");
                 } else {
                     saveProfileNow();
 
@@ -90,13 +90,13 @@ public class LoginActivity extends AppCompatActivity {
 
                         }
                         if (Integer.parseInt(dobday.getText().toString()) < 1 || Integer.parseInt(dobday.getText().toString()) > 31) {
-                            dobday.setError("Enter correct day");
+                            dobday.setError("Geben Sie den richtigen Tag ein");
                         } else {
                             dobmonth.requestFocus();
                         }
 
                     } else {
-                        dobday.setError("Enter day");
+                        dobday.setError("Tag eingeben");
                     }
                     return true;
                 }
@@ -114,12 +114,12 @@ public class LoginActivity extends AppCompatActivity {
 
                         }
                         if (Integer.parseInt(dobmonth.getText().toString()) < 1 || Integer.parseInt(dobmonth.getText().toString()) > 12) {
-                            dobmonth.setError("Enter correct month");
+                            dobmonth.setError("Geben Sie den richtigen Monat ein");
                         } else {
                             dobyear.requestFocus();
                         }
                     } else {
-                        dobmonth.setError("Enter month");
+                        dobmonth.setError("Geben Sie den richtigen Monat ein");
                     }
                     return true;
                 }
@@ -136,12 +136,12 @@ public class LoginActivity extends AppCompatActivity {
                             firstinjday.setText("0" + firstinjday.getText().toString());
                         }
                         if (Integer.parseInt(firstinjday.getText().toString()) < 1 || Integer.parseInt(firstinjday.getText().toString()) > 31) {
-                            firstinjday.setError("Enter correct day");
+                            firstinjday.setError("Geben Sie den richtigen Tag ein");
                         } else {
                             firstinjmonth.requestFocus();
                         }
                     } else {
-                        firstinjday.setError("Enter day");
+                        firstinjday.setError("Geben Sie den richtigen Tag ein");
                     }
                     return true;
                 }
@@ -159,12 +159,12 @@ public class LoginActivity extends AppCompatActivity {
 
                         }
                         if (Integer.parseInt(firstinjmonth.getText().toString()) < 1 || Integer.parseInt(firstinjmonth.getText().toString()) > 12) {
-                            firstinjmonth.setError("Enter correct month");
+                            firstinjmonth.setError("Geben Sie den richtigen Monat ein");
                         } else {
                             firstinjyear.requestFocus();
                         }
                     } else {
-                        firstinjmonth.setError("Enter month");
+                        firstinjmonth.setError("Geben Sie den richtigen Monat ein");
                     }
                     return true;
                 }
@@ -181,12 +181,12 @@ public class LoginActivity extends AppCompatActivity {
                             secondinjday.setText("0" + secondinjday.getText().toString());
                         }
                         if ((Integer.parseInt(secondinjday.getText().toString()) < 1) || (Integer.parseInt(secondinjday.getText().toString()) > 31)) {
-                            secondinjday.setError("Enter correct day");
+                            secondinjday.setError("Geben Sie den richtigen Tag ein");
                         } else {
                             secondinjmonth.requestFocus();
                         }
                     } else {
-                        secondinjday.setError("Enter day");
+                        secondinjday.setError("Geben Sie den richtigen Tag ein");
                     }
                     return true;
                 }
@@ -204,12 +204,12 @@ public class LoginActivity extends AppCompatActivity {
 
                         }
                         if (Integer.parseInt(secondinjmonth.getText().toString()) < 1 || Integer.parseInt(secondinjmonth.getText().toString()) > 12) {
-                            secondinjmonth.setError("Enter correct month");
+                            secondinjmonth.setError("Geben Sie den richtigen Monat ein");
                         } else {
                             secondinjyear.requestFocus();
                         }
                     } else {
-                        secondinjmonth.setError("Enter month");
+                        secondinjmonth.setError("Geben Sie den richtigen Monat ein");
                     }
                     return true;
                 }
@@ -225,10 +225,10 @@ public class LoginActivity extends AppCompatActivity {
                         if (Integer.parseInt(dobyear.getText().toString()) > 1900 && Integer.parseInt(dobyear.getText().toString()) < 2022) {
                             firstinjday.requestFocus();
                         } else {
-                            dobyear.setError("Please enter correct year");
+                            dobyear.setError("Bitte korrektes Jahr eingeben");
                         }
                     } else {
-                        dobyear.setError("Enter year");
+                        dobyear.setError("Bitte korrektes Jahr eingeben");
                     }
                     return true;
                 }
@@ -244,10 +244,10 @@ public class LoginActivity extends AppCompatActivity {
                         if (Integer.parseInt(firstinjyear.getText().toString()) > 1900 && Integer.parseInt(firstinjyear.getText().toString()) < 2022) {
                             secondinjday.requestFocus();
                         } else {
-                            firstinjyear.setError("Please enter correct year");
+                            firstinjyear.setError("Bitte korrektes Jahr eingeben");
                         }
                     } else {
-                        firstinjyear.setError("Enter year");
+                        firstinjyear.setError("Bitte korrektes Jahr eingeben");
                     }
                     return true;
                 }
@@ -263,10 +263,10 @@ public class LoginActivity extends AppCompatActivity {
                         if (Integer.parseInt(secondinjyear.getText().toString()) > 1900 && Integer.parseInt(secondinjyear.getText().toString()) < 2022) {
                             KeyboardUtils.forceCloseKeyboard(secondinjyear);
                         } else {
-                            secondinjyear.setError("Please enter correct year");
+                            secondinjyear.setError("Bitte korrektes Jahr eingeben");
                         }
                     } else {
-                        secondinjyear.setError("Enter year");
+                        secondinjyear.setError("Bitte korrektes Jahr eingeben");
                     }
                     return true;
                 }
